@@ -239,23 +239,3 @@ pnpm grab
 ```
 
 Choose the chain and paste the contract address. The app can then use the grabbed ABI/artifact data.
-
-## GitHub hygiene
-
-Ignored local/generated files include:
-
-- `.env`
-- `node_modules/`
-- `dist/`
-- `cache/`
-- `artifacts/`
-- `ignition/deployments/`
-- `*.tsbuildinfo`
-
-Before pushing, check:
-
-```bash
-pnpm lint
-pnpm build
-git status
-```
