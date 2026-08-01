@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        background-color: #008080; /* Classic Desktop Teal */
+        font-family: "MS Sans Serif", Tahoma, sans-serif;
+        -webkit-font-smoothing: none; /* Disable smoothing for that crunchy pixel look */
+        color: black;
+    }
+}
+
+/* The standard 3D border for windows and buttons */
+.win95-outset {
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #7f7f7f #7f7f7f #ffffff;
+    box-shadow: 1px 1px 0 0 #000; /* The final black outer shadow */
+}
+
+/* The pressed button or input field look */
+.win95-inset {
+    background: #ffffff;
+    border: 2px solid;
+    border-color: #7f7f7f #ffffff #ffffff #7f7f7f;
+}
+
+/* The classic blue title bar */
+.win95-titlebar {
+    background: linear-gradient(90deg, #000080, #1084d0);
+    padding: 3px 2px 3px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
